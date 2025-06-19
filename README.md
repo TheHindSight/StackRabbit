@@ -22,7 +22,6 @@ Then there are two components of the backend:
 - **Node.js**: [Download here](https://nodejs.org)
 - **FCEUX**: [Download here](https://fceux.com)
 - **Python3**: [Download here](https://python.org)
-- **node-gyp & nan**: Install with `npm i node-gyp nan` (Run this AFTER installing node.js And reopening the terminal)
 - **Visual Studio Build Tools**
 
 ## Steps
@@ -38,7 +37,7 @@ Then there are two components of the backend:
    - Navigate to the folder for Stackrabbit using `cd path/to/stackrabbit`.
 
 4. **Install Dependencies**:
-   - Run `npm i` in the command line.
+   - Run `node install.js` in the command line.
 
 5. **Start the Application**:
    - If the previous command runs without errors, execute `npm start`.
