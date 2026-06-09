@@ -1,4 +1,4 @@
-IS_MAC = false
+IS_MAC = true
 IS_PAL = false
 USE_PUSHDOWN = true
 DEBUG_MODE = false
@@ -172,7 +172,7 @@ function requestAdjustmentAsync()
   print("reqLines2 " .. reqLines)
 
   -- Format URL arguments
-  local reqStr = "http://localhost:3000/get-move-async?board=" .. getEncodedBoard() .. "&currentPiece=" .. orientToPiece[pcur]
+  local reqStr = "http://localhost:3000/get-move-async-cpp?board=" .. getEncodedBoard() .. "&currentPiece=" .. orientToPiece[pcur]
   reqStr = reqStr .. "&nextPiece=" .. orientToPiece[pnext] .. "&level=" .. reqLevel .. "&lines=" .. reqLines .. "&inputFrameTimeline=" .. INPUT_TIMELINE
 
   local response = makeHttpRequest(reqStr)
